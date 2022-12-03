@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <title>Personal Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42bde6f865.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Reynante</span><br>From Capinonan, Cabanglasan,Bukidnon</h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+       <div class="about-col-1">
+        <img src="images/user.png">
+       </div>
+       <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>My name is Reynante Baldivino, and I'm a Pinoy
+          designer. I do (and I love) web, print, motion
+          design and photography.
+          
+          Currently I'm employed at Globule Bleu, a leading 
+          communication agency in Wallonia as a Web / Motion
+          Designer:
+          I have worked for big clients such as IBA, EVS and Prayon but
+          also for smaller ones, with the same passion and the same
+          
+          Creativity.
+          I'm always looking for new challenges and new people to meet
+          Don't hesitate to drop me a line !</p>
+
+           <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+          <div class="tab-contents active-tab" id="skills">
+           <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+           </ul>
+       </div>
+       <div class="tab-contents" id="experience">
+        <ul>
+         <li><span>2037 - 2045</span><br>UI/UX Design Training at ET Institute</li>
+         <li><span>2034 - 2036</span><br>Team lead at StarApp LLC.</li>
+         <li><span>2031 - 2033</span><br>UX/UI Design Executive at Coin Digital Ltd.</li>
+         <li><span>2028 - 2030</span><br>Intership at ekart eCommerce</li>
+        </ul >
+    </div>
+    <div class="tab-contents" id="education">
+      <ul>
+       <li><span>2028</span><br>UI/UX Design Training at ET Institute</li>
+       <li><span>2027</span><br>MMBA from MIT Oxford University</li>
+       <li><span>2026</span><br>BSIT from Bukidnon State University</li>
+      </ul>
+  </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------services------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            I use creative and software engineering/programing skills to design, build and improve websites.
+            Understand aboout experience and are able to build websites that are
+            easy to understand, navigate and use, and adhere to design standards and specifications.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>UI/UX Design</h2>
+          <p>Plan and implement new designs.Optimize existing user interface designs.
+            Test for intuitivity and experience.
+            Communicate with clients to understand their business goals and objectives.
+            Develop technical and business requirements and always strive to deliver intuitive and user-centered solutions.
+            Combine creativity with an awareness of the design elements</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Create, maintain, and implement the source code to design mobile apps and
+             mobile platform programs that meet the needs of the project.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title"> My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Social Media Apps</h3>
+            <p>The app connects you to the talented and adorable people around the world.
+              Download it from play store.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Advanced search is one of the most demanded music app features. Let users search not only by the song name or artist but also by mood, genre, remixes, etc.
+              Download it from play store.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p> App Features Easy refunds and free returns are available Collect points and redeem them for reward coupons Great customer service team with quick response.Secure payments using credit card, PayPal, or Android pay.
+              Download it from play store.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------contact---------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> reynantebaldivino34@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+63 997 918 8944</p>
+        <div class="social-icons">
+        <a href="https://faceboook.com/profile.php?id=100077758985354"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Nantoy14?t=YGKus0-v9-qeil6LmWBYHA&s=09"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://instagram.com/reynantebaldivino"><i class="fab fa-instagram"></i></a>
+        <a href="https://snapchat.com/add/nantoy2022?share_id=HOP7brEPY8o&locale=en-US"><i class="fa-brands fa-square-snapchat"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyrigth © Reynante Baldivino. Made with <i class="fas fa-heart"></i> by Easy Tuturials</p>
+  </div>
+</div>
+
+  
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVkQR1dgyD8OXDqx3Z-3eF1bmez_2hpUg3hmq0ApIR5RA_5N3uB5yz7OZmW6pgfVlWxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
